@@ -14,6 +14,6 @@ public:
 		return &bullet;
 	};
 
-private
-	Bullet bullet;
+private:
+		Bullet bullet;
 };

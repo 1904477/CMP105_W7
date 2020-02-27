@@ -17,3 +17,4 @@ void Bullet::update(float dt)
 {
 	move(velocity*dt);
 }
+

@@ -13,7 +13,8 @@ public:
 	void update(float dt);
 	Bullet* spawn(sf::Vector2f pos);
 	bool fired() { return hasFired; };
-	Bullet* getBullet() {
+	Bullet* getBullet() 
+	{
 		return bullet;
 	};
 
