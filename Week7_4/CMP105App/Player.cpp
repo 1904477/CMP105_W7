@@ -28,6 +28,7 @@ void Player::handleInput(float dt)
 		{
 			bullet = spawn(getPosition() + sf::Vector2f(getSize().x / 2, getSize().y / 2));
 			hasFired = true;
+		
 		}
 	}
 }
@@ -42,7 +43,7 @@ void Player::update(float dt)
 
 Bullet* Player::spawn(sf::Vector2f pos)
 {
-	Bullet newBullet;
-	newBullet.setPosition(pos);
-	return &newBullet;
+	Bullet*newBullet=new Bullet;
+	newBullet->setPosition(pos);
+	return newBullet;
 }

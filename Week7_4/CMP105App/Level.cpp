@@ -33,8 +33,10 @@ void Level::render()
 	window->draw(player);
 	if (player.fired())
 	{
-		//window->draw(*player.getBullet());
-	}	endDraw();
+		window->draw(*player.getBullet());
+
+	}	
+	endDraw();
 }
 
 // Begins rendering to the back buffer. Background colour set to light blue.
