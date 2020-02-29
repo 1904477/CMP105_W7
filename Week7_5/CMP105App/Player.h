@@ -11,11 +11,12 @@ public:
 
 	void handleInput(float dt);
 	void update(float dt);
-	Companion* getCompanion()
+	Companion *getCompanion()
 	{
 		return &companion;
 	};
 
 private:
 	Companion companion;
+	int inr = 42069;
 };

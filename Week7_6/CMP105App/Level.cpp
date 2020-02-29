@@ -23,8 +23,12 @@ void Level::handleInput(float dt)
 // Update game objects
 void Level::update(float dt)
 {
-	for(int i = 0; i <= 6; i++)
+	for (int i = 0; i <= 6; i++)
+	{
+		std::cout << bits;
+		
 		bits[i].update(dt);
+	}
 }
 
 // Render level
